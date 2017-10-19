@@ -1,0 +1,6 @@
+{
+    "name" :"Devo Main",
+    "cwd" :"/home/ubuntu/devoMain-React",
+    "node_args" : ["--harmony","--use_strict"],
+    "script":"./index.js"
+}

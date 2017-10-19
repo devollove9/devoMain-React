@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@import "variables";
+
+.signUp{
+    width:              100%;
+
+    background:         $white;
+    border:1px solid red;
+    .signUp-module{
+        margin: 0 auto;
+        width: 960px;
+        text-align:center;
+        border: 1px solid blue;
+        .signUp-head{
+
+        }
+        .signUp-panel{
+            margin: 0 auto;
+            position: relative;
+            max-width: 400px;
+            display: block;
+        }
+    }
+
+
+}
+
+

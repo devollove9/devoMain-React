@@ -1,0 +1,14 @@
+.ReactModal__Overlay {
+  .close-modal {
+    position: absolute;
+    right: 8px;
+    top: 0;
+    font-size: 28px;
+    color: #EE2B2A;
+  }
+  .ReactModal__Content--after-open {
+    &.isMessage {
+      padding: 0;
+    }
+  }
+}

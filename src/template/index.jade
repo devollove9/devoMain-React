@@ -1,0 +1,26 @@
+doctype html
+html(lang='zh-cmn-Hans')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title Devo
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='apple-touch-icon', href='apple-touch-icon.png')
+    each style in styles
+      link(rel='stylesheet', href=style)
+    if release
+      script(type='text/javascript')
+
+    each script in headScripts
+      script(type='text/javascript', src=script)
+  body
+    //if lt IE 9
+      p.browserupgrade
+        You are using an strong outdated browser. Please a(href='http://browsehappy.com/') upgrade your browser to improve your experience.
+    #app
+    each script in tailScripts
+      script(type='text/javascript', src=script)
+
+    if release
+      script(type='text/javascript')

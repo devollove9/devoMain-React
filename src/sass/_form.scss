@@ -1,0 +1,127 @@
+img{
+  vertical-align: top;
+  border: 0;
+}
+ul{
+  list-style: none;
+}
+a{
+  color: #000;
+  text-decoration: none;
+}
+em,i{
+  font-style: normal;
+}
+ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,form,input,th,td{
+  padding:0;
+  margin:0;
+}
+$yellow: #f8b322;
+$grey-light: #4b4b4b;
+$grey-medium: #616161;
+$grey-heavy: #9e9e9e;
+
+.form-radio-tab {
+  input.form-radio-tab-half {
+	width: 120px;
+	height: 36px;
+	font-size: 16px;
+	text-align: center;
+	color: $grey-heavy;
+	border: solid 1px $yellow;
+	background: #fff;
+	outline: none;
+	cursor: pointer;
+	&:not(:first-child) {
+	  border-left:none;
+	}
+	&:hover,&:focus {
+	  color: #fff;
+	  background: $yellow;
+	}
+  }
+}
+.form-select {
+  // width: 270px;
+  height: 36px;
+  color: #4b4b4b;
+  font-size: 14px;
+  text-indent: 8px;
+  border:solid 1px $yellow;
+  margin: 10px 0;
+  outline: none;
+}
+input.form-input-text {
+  width: 120px;
+  height: 36px;
+  display: inline-block;
+  color: $grey-light;
+  margin: 16px 0;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-bottom: solid 1px #d5d5d5;
+  box-shadow: none;
+  background: #fafafa;
+  &:active,&:visited,&:focus{
+	color: #000;
+	border-bottom: solid 1px $yellow;
+  }
+}
+input.form-input-btn {
+  margin-left: 16px;
+  height: 36px;
+  font-size: 16px;
+  border: solid 1px $yellow;
+  text-align: center;
+  color: $grey-heavy;
+  background: #fff;
+  outline: none;
+  cursor: pointer;
+  &:hover,&:focus {
+	color: #fff;
+	background: $yellow;
+  }
+}
+input.form-input-full,.form-input-full {
+  width: 242px;
+}
+input.form-input-half,.form-input-half {
+  width: 108px;
+  &:nth-child(even) {
+	margin-right: 10px;
+  }
+}
+// input.form-input-longest{
+// 	width: 480px;
+
+// }
+.form-list {
+  .form-list-item {
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	font-size: 14px;
+	color: #404040;
+	border-bottom: solid 1px #e8e8e8;
+	em {
+	  float: right;
+	}
+  }
+}
+.form-textarea{
+  height: 102px;
+  outline: none;
+  border: solid 1px #eee;
+  color: #424242;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 16px;
+  resize: none;
+}
+.title{
+  font-size: 18px;
+  font-weight: normal;
+  color: #616161;
+  margin-bottom: 20px;
+}

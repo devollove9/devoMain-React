@@ -1,0 +1,41 @@
+@import 'http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic&subset=latin,latin-ext';
+
+$noto-sans-font-version:  '1.004';
+
+@mixin noto-sans-font-face($weight, $weight-number) {
+  font: {
+    family: $font-family-noto-sans-cjk;
+    style:  normal;
+    weight: $weight-number;
+    src:    local('Noto Sans'), local('NotoSans'),
+            url('http://localhost:8000/fonts/noto-sans/NotoSansCJKsc-#{$weight}.otf?v=#{$noto-sans-font-version}') format('opentype');
+  }
+}
+
+@font-face {
+  @include noto-sans-font-face('Thin', 250);
+}
+
+@font-face {
+  @include noto-sans-font-face('Light', 300);
+}
+
+@font-face {
+  @include noto-sans-font-face('DemiLight', 350);
+}
+
+@font-face {
+  @include noto-sans-font-face('Regular', 400);
+}
+
+@font-face {
+  @include noto-sans-font-face('Medium', 500);
+}
+
+@font-face {
+  @include noto-sans-font-face('Bold', 700);
+}
+
+@font-face {
+  @include noto-sans-font-face('Black', 900);
+}

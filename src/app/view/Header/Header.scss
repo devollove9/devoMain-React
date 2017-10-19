@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@import "variables";
+
+// Component-level variables
+$language-switch-height:  1.8rem;
+$switcher-border-radius:  10px;
+$switcher-button-width:   5rem;
+
+.Header {
+  display:    inline-block;
+  position:   fixed;
+  top:        0;
+  width:      100%;
+  height:     $header-height;
+  z-index:    $max-z-index;
+  background: transparentize($white, 0.03);
+  border-bottom: 1px solid rgba(0,0,0,0.22);
+  .header-container {
+    width:  $max-content-width;
+    margin: 0 auto;
+    height: $header-height;
+
+    .logo-panel {
+      margin:       0 1.5rem 0 0;
+      font-size:    1.5rem;
+      line-height:  $header-height;
+
+      a {
+        display: inline-block;
+        color: black;
+        background: $small-logo;
+        padding-left: 52px;
+        height: $header-height;
+        line-height:$header-height;
+      }
+    }
+    .language-panel {
+      float:          right;
+      width:          $switcher-button-width * 2;
+      height:         $language-switch-height;
+      margin:         ($header-height - $language-switch-height) / 2 10px;
+      background:     $yellow-dark;
+      border-radius:  $switcher-border-radius;
+
+      a {
+        display:      inline-block;
+        width:        $switcher-button-width;
+        line-height:  $language-switch-height;
+        text-align:   center;
+        font-size:    0.875rem;
+        color:        white;
+
+        &.active {
+          color:          $black;
+          background:     #fffeff;
+          border-radius:  $switcher-border-radius;
+        }
+      }
+    }
+
+    .sign-in-panel {
+      font-size:  1.124rem;
+      color:      black;
+      min-width:      11rem;
+      a {
+        line-height:  $header-height;
+        color:        black;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      span {
+        padding-left: 5px;
+        padding-right: 5px;
+        line-height:  $header-height;
+        color:        black;
+        cursor: pointer;
+        float: left;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .logged {
+        height: $header-height;
+        line-height: $header-height;
+        span:nth-of-type(2):hover{
+          color: #000;
+          text-decoration: underline;
+        }
+        .logged-name {
+          display: inline-block;
+          width: 9rem;
+          overflow: hidden;
+        }
+      }
+
+      .sign-out {
+        color: #75623A;
+        font-size: 1rem;
+      }
+    }
+  }
+}
